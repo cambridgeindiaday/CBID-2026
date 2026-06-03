@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cambridge India Day 2026 — A Little Piece of India in the Heart of Cambridge</title>
-<meta name="description" content="Cambridge India Day 2026 — a free two-day cultural festival at Jesus Green, Cambridge, 4–5 July 2026. Celebrating India's heritage through dance, music, food, exhibitions and community. Presented by CamCareUK.">
+<title>Cambridge India Day 2026 | A Little Piece of India in the Heart of Cambridge</title>
+<meta name="description" content="Cambridge India Day 2026: a free two-day cultural festival at Jesus Green, Cambridge, 4–5 July 2026. Celebrating India's heritage through dance, music, food, exhibitions and community. Presented by CamCareUK.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cambridgeindiaday.co.uk/">
 <meta property="og:title" content="Cambridge India Day 2026">
-<meta property="og:description" content="A little piece of India in the heart of Cambridge — a free, two-day celebration of culture, colour, food and community. 4–5 July 2026, Jesus Green. Everyone welcome.">
+<meta property="og:description" content="A little piece of India in the heart of Cambridge: a free, two-day celebration of culture, colour, food and community. 4–5 July 2026, Jesus Green. Everyone welcome.">
 <meta property="og:image" content="https://cambridgeindiaday.co.uk/images/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -18,6 +18,43 @@
 <meta name="twitter:title" content="Cambridge India Day 2026">
 <meta name="twitter:description" content="A free, two-day celebration of Indian culture, colour, food and community. 4–5 July 2026, Jesus Green, Cambridge. Everyone welcome.">
 <meta name="twitter:image" content="https://cambridgeindiaday.co.uk/images/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Festival",
+  "name": "Cambridge India Day 2026",
+  "description": "A free, two-day cultural festival celebrating India's heritage through dance, music, food, exhibitions and community, at Jesus Green, Cambridge.",
+  "startDate": "2026-07-04T10:00:00+01:00",
+  "endDate": "2026-07-05T18:00:00+01:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "image": "https://cambridgeindiaday.co.uk/images/og-image.jpg",
+  "url": "https://cambridgeindiaday.co.uk/",
+  "location": {
+    "@type": "Place",
+    "name": "Jesus Green",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cambridge",
+      "addressCountry": "GB"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "CamCareUK",
+    "url": "https://cambridgeindiaday.co.uk/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "GBP",
+    "availability": "https://schema.org/InStock",
+    "url": "https://cambridgeindiaday.co.uk/",
+    "validFrom": "2026-01-01T00:00:00+00:00"
+  },
+  "isAccessibleForFree": true
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,500&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -243,6 +280,40 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
   font-family:'Fraunces';font-style:italic;font-size:1.35rem;line-height:1.5;color:var(--ink)}
 .essay-pull span{color:var(--magenta);font-style:normal}
 
+/* ===== AWARDS BAND ===== */
+.awards-band{background:linear-gradient(135deg,var(--ink2),#5e2a85);border-radius:24px;padding:clamp(1.8em,4vw,2.6em) clamp(1.8em,4vw,3em);
+  display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.awards-band::after{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(246,166,9,.35),transparent 70%)}
+.awards-text{flex:1;min-width:260px;position:relative;z-index:1}
+.awards-text h2{font-size:clamp(1.5rem,2.8vw,2.1rem);font-weight:800;margin:.25em 0 .35em;line-height:1.08}
+.awards-text p{color:rgba(255,255,255,.88);font-size:1.05rem;max-width:520px}
+.awards-cta{display:flex;flex-direction:column;gap:.8rem;position:relative;z-index:1}
+.btn-light{background:#fff;color:var(--ink);justify-content:center}
+.btn-outline-light{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5);justify-content:center}
+@media(max-width:640px){.awards-cta{flex-direction:row;width:100%}.awards-cta .btn{flex:1}}
+
+/* ===== COUNTDOWN ===== */
+.countdown{background:var(--ink);color:#fff;padding:clamp(28px,4vw,40px) 0}
+.cd-inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.cd-left{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
+.cd-units{display:flex;gap:.8rem}
+.cd-unit{text-align:center;min-width:62px}
+.cd-unit b{font-family:'Fraunces';font-size:clamp(1.7rem,3vw,2.4rem);font-weight:800;line-height:1;display:block;
+  background:linear-gradient(120deg,var(--marigold),var(--magenta));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.cd-unit span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.cd-label{font-weight:500;color:rgba(255,255,255,.85)}
+.cd-label b{color:#fff;font-family:'Fraunces'}
+/* ===== FAQ ===== */
+.faq{background:var(--paper)}
+.faq-list{max-width:760px;margin:0 auto}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:.8rem;overflow:hidden}
+.faq-item summary{padding:1.1em 1.3em;font-weight:600;font-size:1.08rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1em;color:var(--ink)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.5rem;color:var(--saffron);transition:transform .3s;flex:none;line-height:1}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .a{padding:0 1.3em 1.2em;color:#3c3248;font-size:1.02rem}
+.faq-item .a a{color:var(--saffron);font-weight:600}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:980px){
   .about-grid,.contact-grid{grid-template-columns:1fr}
@@ -279,6 +350,7 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
     <nav class="navlinks" id="nav">
       <a href="#about">About</a>
       <a href="#programme">Programme</a>
+      <a href="awards.html">Awards</a>
       <a href="#gallery">Gallery</a>
       <a href="#involved">Get Involved</a>
       <a href="#sponsor">Sponsor</a>
@@ -294,7 +366,7 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
   <div class="wrap hero-inner">
     <span class="kicker reveal" style="--d:.05s"><svg width="16" height="16"><use href="#marigold"/></svg> Presented by CamCareUK · Registered Charity 1185883</span>
     <h1 class="reveal" style="--d:.15s">Cambridge<br>India Day <em>2026</em></h1>
-    <p class="lede reveal" style="--d:.28s">A little piece of India in the heart of Cambridge — a free, two-day celebration of culture, colour, food and community. Everyone welcome.</p>
+    <p class="lede reveal" style="--d:.28s">A little piece of India in the heart of Cambridge: a free, two-day celebration of culture, colour, food and community. Everyone welcome.</p>
     <div class="hero-meta reveal" style="--d:.4s">
       <div class="m"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> 4–5 July 2026</div>
       <div class="m"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Jesus Green, Cambridge</div>
@@ -305,7 +377,26 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
       <a href="#sponsor" class="btn btn-ghost">Become a Sponsor</a>
     </div>
   </div>
-  <div class="hero-foot reveal" style="--d:.7s"><div class="wrap"><span class="charity-dot"></span> A community festival — built by volunteers, for everyone in Cambridge.</div></div>
+  <div class="hero-foot reveal" style="--d:.7s"><div class="wrap"><span class="charity-dot"></span> A community festival, built by volunteers, for everyone in Cambridge.</div></div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown">
+  <div class="wrap cd-inner">
+    <div class="cd-left">
+      <div class="cd-label">Counting down to<br><b>Cambridge India Day 2026</b></div>
+      <div class="cd-units" id="cd">
+        <div class="cd-unit"><b id="cd-d">--</b><span>days</span></div>
+        <div class="cd-unit"><b id="cd-h">--</b><span>hrs</span></div>
+        <div class="cd-unit"><b id="cd-m">--</b><span>min</span></div>
+        <div class="cd-unit"><b id="cd-s">--</b><span>sec</span></div>
+      </div>
+    </div>
+    <a href="cbid-2026.ics" download class="btn btn-primary">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M12 14v4M10 16h4"/></svg>
+      Add to calendar
+    </a>
+  </div>
 </section>
 
 <!-- ABOUT -->
@@ -314,9 +405,9 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
     <div class="about-copy reveal">
       <span class="eyebrow">Why Cambridge India Day?</span>
       <div class="shead" style="margin-bottom:18px"><h2>A cultural bridge in the heart of the city</h2></div>
-      <p>Cambridge India Day brings India's rich heritage to Jesus Green through <strong>exhibitions, dance, music, regional cuisine, arts, crafts and folk culture</strong> — an open, welcoming event where people of every background come together.</p>
+      <p>Cambridge India Day brings India's rich heritage to Jesus Green through <strong>exhibitions, dance, music, regional cuisine, arts, crafts and folk culture</strong>. It is an open, welcoming event where people of every background come together.</p>
       <p>Our vision is to help younger generations of the Indian diaspora stay connected to their roots, while sharing the beauty, diversity and values of India with the wider British, international and global communities that call Cambridge home.</p>
-      <p>After two successful pilot years at Christ's Pieces — drawing huge crowds even through heavy rain, <strong>in 2026</strong> — the festival now moves to the larger setting of Jesus Green. This belongs to all of us.</p>
+      <p>After two successful pilot years at Christ's Pieces, which drew huge crowds <strong>even through heavy rain</strong>, the festival now moves to the larger setting of Jesus Green. This belongs to all of us.</p>
     </div>
     <div class="about-frame reveal">
       <img src="images/cultural-bridge.jpg" alt="Community members in traditional Indian dress at Cambridge India Day">
@@ -331,7 +422,7 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
     <div class="shead center reveal">
       <span class="eyebrow">A thriving community</span>
       <h2>Cambridgeshire's growing Indian diaspora</h2>
-      <p>Cambridge is a global hub of talent, research and enterprise — and home to a vibrant, deeply connected Indian community.</p>
+      <p>Cambridge is a global hub of talent, research and enterprise, and home to a vibrant, deeply connected Indian community.</p>
     </div>
     <div class="stat-row">
       <div class="stat reveal"><b>12,000+</b><span>Indian diaspora across Cambridgeshire</span></div>
@@ -339,7 +430,7 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
       <div class="stat reveal" style="transition-delay:.2s"><b>30+</b><span>states &amp; regions of India represented</span></div>
       <div class="stat reveal" style="transition-delay:.3s"><b>1000s</b><span>of visitors expected at Jesus Green</span></div>
     </div>
-    <p class="tagline reveal">Professionals, researchers, students, families, entrepreneurs and technology leaders — connected with <em>world-renowned hospitals, the University of Cambridge, science parks and global companies.</em></p>
+    <p class="tagline reveal">Professionals, researchers, students, families, entrepreneurs and technology leaders, connected with <em>world-renowned hospitals, the University of Cambridge, science parks and global companies.</em></p>
   </div>
 </section>
 
@@ -351,7 +442,7 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
       <h2>Why Cambridge India Day matters today</h2>
     </div>
     <div class="essay-body reveal">
-      <p class="lead">Cambridge is one of the world's most international cities. People from every corner of the globe come here to study, work, innovate and build their lives — and among them is a vibrant, growing Indian diaspora that has contributed significantly to the city's academic, scientific, technological, healthcare and business sectors.</p>
+      <p class="lead">Cambridge is one of the world's most international cities. People from every corner of the globe come here to study, work, innovate and build their lives, and among them is a vibrant, growing Indian diaspora that has contributed significantly to the city's academic, scientific, technological, healthcare and business sectors.</p>
       <p>Yet despite the visible contribution of Indians to Cambridge, there are relatively few opportunities for the wider community to experience the richness, diversity and depth of Indian culture in one place. This is where Cambridge India Day becomes important.</p>
       <p>Cambridge India Day is more than a festival. It is a cultural bridge between communities. It provides an opportunity for local residents, international visitors, students and families to discover India beyond stereotypes and headlines. Through food, music, dance, art, crafts, literature, travel, history and regional traditions, the event offers an authentic glimpse into one of the world's oldest and most diverse civilisations.</p>
 
@@ -359,17 +450,17 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
       <p>For the Indian diaspora, Cambridge India Day serves another important purpose. Many second- and third-generation British Indians have grown up in the United Kingdom and naturally identify strongly with British society. While this is a positive reflection of successful integration, it is equally important that younger generations remain connected to their cultural roots and heritage. Events such as this create opportunities for young people to develop a sense of identity, belonging and pride in their ancestry, while remaining fully engaged as British citizens.</p>
 
       <h3>A reflection of modern Britain</h3>
-      <p>The event also reflects the changing nature of modern Britain — a multicultural society where communities thrive when they understand, respect and celebrate one another's traditions. Cultural festivals help break down barriers, challenge misconceptions and create meaningful connections between people from different backgrounds. When a local family tastes regional Indian food for the first time, watches a classical dance performance, or learns about Indian festivals and traditions, cultural understanding grows naturally.</p>
+      <p>The event also reflects the changing nature of modern Britain, a multicultural society where communities thrive when they understand, respect and celebrate one another's traditions. Cultural festivals help break down barriers, challenge misconceptions and create meaningful connections between people from different backgrounds. When a local family tastes regional Indian food for the first time, watches a classical dance performance, or learns about Indian festivals and traditions, cultural understanding grows naturally.</p>
 
-      <div class="essay-pull">"India is not a single culture, language or tradition. It is a mosaic of states, regions, languages, faiths, cuisines and artistic expressions — <span>and every region has its own unique story to tell.</span>"</div>
+      <div class="essay-pull">"India is not a single culture, language or tradition. It is a mosaic of states, regions, languages, faiths, cuisines and artistic expressions, <span>and every region has its own unique story to tell.</span>"</div>
 
       <h3>Economic and educational connections</h3>
       <p>There is also an economic and educational dimension. India is one of the world's fastest-growing economies and an increasingly important global partner for the United Kingdom. Cambridge itself has strong academic, research, business and technology links with India. By showcasing Indian tourism, innovation, entrepreneurship, handicrafts and regional diversity, Cambridge India Day can strengthen these connections and inspire future collaborations.</p>
-      <p>Importantly, the festival celebrates the extraordinary diversity within India itself — from the mountains of Kashmir to the backwaters of Kerala, from the deserts of Rajasthan to the tea gardens of Assam. Cambridge India Day provides a platform for these diverse voices to be heard and appreciated.</p>
+      <p>Importantly, the festival celebrates the extraordinary diversity within India itself: from the mountains of Kashmir to the backwaters of Kerala, from the deserts of Rajasthan to the tea gardens of Assam. Cambridge India Day provides a platform for these diverse voices to be heard and appreciated.</p>
 
       <h3>A welcoming space for everyone</h3>
       <p>The vision is simple: to create a welcoming space where everyone can experience India, regardless of their background, nationality or faith. It is a celebration of friendship, understanding and community spirit.</p>
-      <p>The success of such an event cannot be achieved by a small organising team alone. It requires the support, enthusiasm and participation of the wider community. Volunteers, performers, exhibitors, sponsors, businesses, charities, students and families all have a role to play — and by contributing their time, skills and ideas, they help create an event that belongs to everyone.</p>
+      <p>The success of such an event cannot be achieved by a small organising team alone. It requires the support, enthusiasm and participation of the wider community. Volunteers, performers, exhibitors, sponsors, businesses, charities, students and families all have a role to play, and by contributing their time, skills and ideas, they help create an event that belongs to everyone.</p>
       <p>Every major cultural celebration begins with a small step. Cambridge India Day is still in its early years, but it carries the potential to become one of the city's most significant cultural events, bringing together thousands of people in a spirit of friendship and mutual respect.</p>
       <p>At its heart, Cambridge India Day is about sharing. Sharing culture. Sharing heritage. Sharing stories, food and music. And most importantly, sharing a vision of a diverse and inclusive Cambridge where communities come together to celebrate what makes each of them unique. In a world that is often divided, such opportunities to connect, learn and celebrate together have never been more important.</p>
     </div>
@@ -382,7 +473,7 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
     <div class="shead reveal">
       <span class="eyebrow">Festival Highlights</span>
       <h2>Two days, one celebration</h2>
-      <p>A packed weekend of culture for all ages — from state exhibitions and live performances to a bustling bazaar and food village.</p>
+      <p>A packed weekend of culture for all ages, from state exhibitions and live performances to a bustling bazaar and food village.</p>
     </div>
     <div class="prog-tabs">
       <div class="day sat reveal">
@@ -426,6 +517,23 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
   </div>
 </section>
 
+<!-- AWARDS TEASER -->
+<section style="background:var(--cream);padding:clamp(40px,6vw,72px) 0">
+  <div class="wrap">
+    <div class="awards-band reveal">
+      <div class="awards-text">
+        <span class="eyebrow" style="color:#fff">New for 2026</span>
+        <h2>Community Champion Recognition Awards</h2>
+        <p>Know someone who quietly makes Cambridgeshire kinder and stronger? Nominate a local hero to be celebrated at Cambridge India Day.</p>
+      </div>
+      <div class="awards-cta">
+        <a href="awards.html" class="btn btn-light">Learn more</a>
+        <a href="https://forms.gle/LxnMmrp36Uokvaw96" target="_blank" rel="noopener" class="btn btn-outline-light">Nominate someone</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- GALLERY -->
 <section class="gallery section-pad" id="gallery">
   <div class="wrap">
@@ -451,7 +559,7 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
     <div style="text-align:center;margin-top:clamp(28px,4vw,46px)">
       <p style="color:rgba(255,255,255,.75);margin-bottom:1.1em;font-size:1.05rem">Want to see more? Browse the full photo albums from both years.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-        <a href="https://photos.app.goo.gl/RnYTgTVS7R2aHrbC6" target="_blank" rel="noopener" class="btn btn-ghost">2024 Album — Our first year</a>
+        <a href="https://photos.app.goo.gl/RnYTgTVS7R2aHrbC6" target="_blank" rel="noopener" class="btn btn-ghost">2024 Album · Our first year</a>
         <a href="https://photos.app.goo.gl/uXRtgsjtjBnvDykg7" target="_blank" rel="noopener" class="btn btn-primary">2025 Album</a>
       </div>
     </div>
@@ -467,8 +575,8 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
       <p>We welcome you not only as visitors, but as the people who shape the day. Bring your skills, your energy and your culture.</p>
     </div>
     <div class="inv-grid">
-      <div class="icard reveal"><div class="ic"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Volunteers &amp; Stewards</h3><p>Help run the day — stewarding, first aid, set-up and event management.</p></div>
-      <div class="icard reveal" style="transition-delay:.08s"><div class="ic"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><h3>Dancers &amp; Performers</h3><p>Take to the stage — solo, school or community group performances.</p></div>
+      <div class="icard reveal"><div class="ic"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Volunteers &amp; Stewards</h3><p>Help run the day: stewarding, first aid, set-up and event management.</p></div>
+      <div class="icard reveal" style="transition-delay:.08s"><div class="ic"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><h3>Dancers &amp; Performers</h3><p>Take to the stage: solo, school or community group performances.</p></div>
       <div class="icard reveal" style="transition-delay:.16s"><div class="ic"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg></div><h3>Stallholders</h3><p>Showcase food, crafts, retail or your start-up at the bazaar.</p></div>
       <div class="icard reveal"><div class="ic"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div><h3>Pavilion Exhibitors</h3><p>Represent a state or region with a heritage or tourism showcase.</p></div>
       <div class="icard reveal" style="transition-delay:.08s"><div class="ic"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div><h3>Photographers &amp; Media</h3><p>Capture the day and help tell the story across our channels.</p></div>
@@ -508,10 +616,10 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
       <div class="xbox reveal" style="transition-delay:.08s">
         <h3><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>Book a stall</h3>
         <ul class="xlist">
-          <li>Food stall — one day <b>£300</b></li>
-          <li>Food stall — two days <b>£500</b></li>
-          <li>India Bazaar — one day <b>£150</b></li>
-          <li>India Bazaar — two days <b>£200</b></li>
+          <li>Food stall (one day) <b>£300</b></li>
+          <li>Food stall (two days) <b>£500</b></li>
+          <li>India Bazaar (one day) <b>£150</b></li>
+          <li>India Bazaar (two days) <b>£200</b></li>
         </ul>
         <p style="font-size:.88rem;color:var(--muted);margin-top:.8em">Plus website, brochure, video &amp; social media branding options for every partner.</p>
       </div>
@@ -546,16 +654,33 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq section-pad">
+  <div class="wrap">
+    <div class="shead center reveal"><span class="eyebrow">Good to know</span><h2>Frequently asked questions</h2></div>
+    <div class="faq-list">
+      <details class="faq-item reveal"><summary>Is entry free?</summary><div class="a">Yes — Cambridge India Day is completely free to attend, for everyone. Just turn up and enjoy.</div></details>
+      <details class="faq-item reveal"><summary>When and where is it?</summary><div class="a">Saturday 4 and Sunday 5 July 2026, at Jesus Green, Cambridge — an open park in the heart of the city. See our <a href="venue.html">venue &amp; directions page</a> for a map and travel info.</div></details>
+      <details class="faq-item reveal"><summary>Is it family and child friendly?</summary><div class="a">Absolutely. There's a dedicated Children's Zone, family activities, and plenty of space for buggies and prams across the green.</div></details>
+      <details class="faq-item reveal"><summary>Is the venue accessible?</summary><div class="a">Jesus Green is a flat, open park with level grass paths and step-free access. For specific accessibility needs, please <a href="#contact">get in touch</a> and we'll do our best to help.</div></details>
+      <details class="faq-item reveal"><summary>What about parking and getting there?</summary><div class="a">City-centre parking is very limited, so we recommend Cambridge's Park &amp; Ride, public transport, or cycling. Full details are on the <a href="venue.html">venue &amp; directions page</a>.</div></details>
+      <details class="faq-item reveal"><summary>Will there be food, and can I pay by card?</summary><div class="a">Yes — a Food Village with regional cuisines from across India. Most stalls accept card, but it's worth carrying a little cash too.</div></details>
+      <details class="faq-item reveal"><summary>Does it go ahead in the rain?</summary><div class="a">Yes! Our pilot events drew big crowds even through heavy rain. The festival runs rain or shine, so dress for the British summer.</div></details>
+      <details class="faq-item reveal"><summary>How can I perform, book a stall, or volunteer?</summary><div class="a">We'd love to have you involved. Head to the <a href="#involved">Get Involved</a> section or <a href="#contact">contact us</a> — we welcome volunteers, performers, stallholders, exhibitors and sponsors.</div></details>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact section-pad" id="contact">
   <div class="wrap contact-grid">
     <div class="reveal">
       <span class="eyebrow">Join us</span>
-      <h2>Let's bring India to Cambridge — together</h2>
+      <h2>Let's bring India to Cambridge, together</h2>
       <p class="lede">Whether you'd like to volunteer, perform, book a stall or sponsor the festival, we'd love to hear from you.</p>
       <div class="cline"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg><a href="mailto:cambridgeindiaday@gmail.com">cambridgeindiaday@gmail.com</a></div>
       <div class="cline"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="sms:07852753216">07852 753216</a></div>
-      <div class="cline"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Jesus Green, Cambridge City</div>
+      <div class="cline"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Jesus Green, Cambridge &nbsp;·&nbsp; <a href="venue.html" style="color:var(--marigold);font-weight:600">Map &amp; directions →</a></div>
       <div class="cline"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/></svg>CamCareUK · Registered Charity No. 1185883</div>
     </div>
     <div class="form reveal" style="transition-delay:.1s">
@@ -587,10 +712,10 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
     <div class="foot-top">
       <div>
         <div class="foot-brand"><span class="dot"><svg><use href="#marigold"/></svg></span>Cambridge India Day 2026</div>
-        <p style="margin-top:.7em;max-width:320px;font-size:.9rem">A little piece of India at Jesus Green — inspiring pride in our heritage and strengthening community bonds.</p>
+        <p style="margin-top:.7em;max-width:320px;font-size:.9rem">A little piece of India at Jesus Green, inspiring pride in our heritage and strengthening community bonds.</p>
       </div>
       <div class="foot-links">
-        <a href="#about">About</a><a href="#programme">Programme</a><a href="#gallery">Gallery</a><a href="#involved">Get Involved</a><a href="#sponsor">Sponsor</a><a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#programme">Programme</a><a href="awards.html">Awards</a><a href="#gallery">Gallery</a><a href="#involved">Get Involved</a><a href="#sponsor">Sponsor</a><a href="venue.html">Venue</a><a href="#contact">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -630,6 +755,18 @@ document.getElementById('send').addEventListener('click',()=>{
   const body=`Name: ${n}%0AEmail: ${em}%0ARole: ${r}%0A%0A${encodeURIComponent(m)}`;
   location.href=`mailto:cambridgeindiaday@gmail.com?subject=${encodeURIComponent('Get Involved: '+r)}&body=${body}`;
 });
+// countdown to 4 July 2026, 10:00 BST
+(function(){
+  const target=new Date('2026-07-04T10:00:00+01:00').getTime();
+  const d=document.getElementById('cd-d'),h=document.getElementById('cd-h'),m=document.getElementById('cd-m'),s=document.getElementById('cd-s');
+  if(!d)return;
+  function tick(){
+    let diff=target-Date.now(); if(diff<0)diff=0;
+    const dd=Math.floor(diff/86400000),hh=Math.floor(diff%86400000/3600000),mm=Math.floor(diff%3600000/60000),ss=Math.floor(diff%60000/1000);
+    d.textContent=dd; h.textContent=String(hh).padStart(2,'0'); m.textContent=String(mm).padStart(2,'0'); s.textContent=String(ss).padStart(2,'0');
+  }
+  tick(); setInterval(tick,1000);
+})();
 </script>
 </body>
 </html>

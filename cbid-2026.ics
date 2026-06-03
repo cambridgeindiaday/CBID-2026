@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Cambridge India Day//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cambridge-india-day-2026@cambridgeindiaday.co.uk
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20260706
+SUMMARY:Cambridge India Day 2026
+DESCRIPTION:A free two-day cultural festival celebrating India's heritage - dance, music, food, exhibitions and community. Everyone welcome. https://cambridgeindiaday.co.uk/
+LOCATION:Jesus Green, Cambridge
+URL:https://cambridgeindiaday.co.uk/
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
