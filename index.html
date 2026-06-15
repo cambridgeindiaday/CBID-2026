@@ -98,7 +98,7 @@ header.scrolled{background:rgba(27,18,51,.92);backdrop-filter:blur(12px);box-sha
 .navlinks .btn{padding:.6em 1.2em;font-size:.92rem}
 .burger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px}
 .nav-mobile{display:none;align-items:center;gap:16px}
-.ig-mobile{color:#fff;filter:drop-shadow(0 1px 4px rgba(0,0,0,.55))}
+.ig-mobile{color:#fff;background:rgba(27,18,51,.5);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.3);border-radius:50%;padding:8px}
 .burger span{width:26px;height:2.5px;background:#fff;border-radius:2px;transition:.3s;box-shadow:0 1px 3px rgba(0,0,0,.5)}
 
 /* ===== HERO ===== */
@@ -120,6 +120,8 @@ header.scrolled{background:rgba(27,18,51,.92);backdrop-filter:blur(12px);box-sha
 .hero-meta .m-link:hover{color:var(--marigold)}
 .hero-meta .dir{color:var(--marigold);font-weight:600;font-size:.92em}
 .hero-cta{display:flex;flex-wrap:wrap;gap:1rem}
+.hero-cta .btn-ghost{background:rgba(27,18,51,.5);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-color:rgba(255,255,255,.55)}
+.hero-cta .btn-ghost:hover{background:rgba(27,18,51,.7);border-color:var(--marigold);color:var(--marigold)}
 .hero-foot{position:absolute;bottom:26px;left:0;right:0;z-index:1}
 .hero-foot .wrap{display:flex;align-items:center;gap:.7em;font-size:.85rem;color:rgba(255,255,255,.7)}
 .hero-foot .charity-dot{width:7px;height:7px;border-radius:50%;background:var(--green)}
@@ -343,6 +345,8 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
   .grid-photos{columns:2}
   .hero-meta{gap:1rem}
   .about-frame .badge{left:0}
+  .hero-cta{flex-wrap:nowrap;gap:.5rem}
+  .hero-cta .btn{flex:1;padding:.8em .3em;font-size:.82rem;white-space:nowrap;justify-content:center}
 }
 .dot.logo{background:#fff!important;overflow:hidden;padding:0}.dot.logo img{width:100%;height:100%;object-fit:cover;display:block}.ig{display:inline-flex;align-items:center;color:inherit;transition:color .2s,transform .2s}.ig:hover{color:var(--marigold);transform:translateY(-2px)}
 </style>
@@ -387,11 +391,10 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
     </div>
     <div class="hero-cta reveal" style="--d:.52s">
       <a href="#involved" class="btn btn-primary">Get Involved</a>
-      <a href="#sponsor" class="btn btn-ghost">Become a Sponsor</a>
+      <a href="#sponsor" class="btn btn-ghost">Sponsor</a>
       <a href="faq.html" class="btn btn-ghost">FAQs</a>
     </div>
   </div>
-  <div class="hero-foot reveal" style="--d:.7s"><div class="wrap"><span class="charity-dot"></span> A community festival, built by volunteers, for everyone in Cambridge.</div></div>
 </section>
 
 <!-- COUNTDOWN -->
