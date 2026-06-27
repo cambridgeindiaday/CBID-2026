@@ -110,6 +110,8 @@ header.scrolled{background:rgba(27,18,51,.92);backdrop-filter:blur(12px);box-sha
 .hero-inner{padding-top:110px;padding-bottom:60px;max-width:760px;position:relative;z-index:1}
 .hero .kicker{display:inline-flex;align-items:center;gap:.7em;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);
   padding:.5em 1.1em;border-radius:100px;font-weight:500;font-size:.9rem;margin-bottom:1.4rem;backdrop-filter:blur(4px)}
+.cc-chip{background:#fff;border-radius:7px;padding:4px 8px;display:inline-flex;align-items:center;flex:none;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.cc-chip img{height:30px;width:auto;display:block}
 .hero h1{font-size:clamp(2.7rem,6.6vw,5.4rem);line-height:1.02;font-weight:800;letter-spacing:-.02em;margin-bottom:.4em}
 .hero h1 em{font-style:italic;color:var(--marigold);font-weight:500}
 .hero .lede{font-size:clamp(1.05rem,1.7vw,1.32rem);max-width:560px;color:rgba(255,255,255,.9);margin-bottom:2rem;font-weight:300}
@@ -240,6 +242,7 @@ header.scrolled{background:rgba(27,18,51,.92);backdrop-filter:blur(12px);box-sha
 .logo-tile{background:#fff;border:1px solid var(--line);border-radius:16px;width:170px;height:110px;display:grid;place-items:center;padding:14px;transition:transform .3s,box-shadow .3s}
 .logo-tile:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
 .logo-tile img{max-height:100%;max-width:100%;object-fit:contain}
+.cc-tile{width:240px}
 
 /* ===== CONTACT / FORM ===== */
 .contact{background:var(--ink);color:#fff}
@@ -381,7 +384,7 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
 <section class="hero" id="top">
   <div class="hero-bg"><img src="images/colorful-umbrellas.jpg" alt="Festive celebrations at Cambridge India Day"></div>
   <div class="wrap hero-inner">
-    <span class="kicker reveal" style="--d:.05s"><svg width="16" height="16"><use href="#marigold"/></svg> Presented by CamCareUK · Registered Charity 1185883</span>
+    <span class="kicker reveal" style="--d:.05s"><span class="cc-chip"><img src="images/logo-camcareuk.png" alt="CamCare UK"></span> Presented by CamCareUK · Registered Charity 1185883</span>
     <h1 class="reveal" style="--d:.15s">Cambridge<br>India Day <em>2026</em></h1>
     <p class="lede reveal" style="--d:.28s">A little piece of India in the heart of Cambridge: a free, two-day celebration of culture, colour, food and community. Everyone welcome.</p>
     <div class="hero-meta reveal" style="--d:.4s">
@@ -649,6 +652,10 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
 <section class="logos section-pad">
   <div class="wrap">
     <div class="shead center reveal"><span class="eyebrow">With gratitude</span><h2>Our past sponsors &amp; supporters</h2><p>With thanks to the partners and performing groups who helped bring our pilot events to life. <em>2026 partners to be confirmed.</em></p></div>
+    <p class="logo-label reveal">Organised by</p>
+    <div class="logo-row">
+      <div class="logo-tile cc-tile reveal"><img src="images/logo-camcareuk.png" alt="CamCare UK — organiser"></div>
+    </div>
     <p class="logo-label reveal">Past sponsors</p>
     <div class="logo-row">
       <div class="logo-tile reveal"><img src="images/spon-icici.jpg" alt="ICICI Bank"></div>
@@ -656,6 +663,7 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
       <div class="logo-tile reveal"><img src="images/spon-namaste.png" alt="Namaste Village"></div>
       <div class="logo-tile reveal"><img src="images/spon-urbanchai.png" alt="Urban Chai"></div>
       <div class="logo-tile reveal"><img src="images/spon-tiffintruck.png" alt="The Tiffin Truck"></div>
+      <div class="logo-tile reveal"><img src="images/spon-namastecambridge.png" alt="Namaste Cambridge"></div>
     </div>
     <p class="logo-label reveal">Performing groups &amp; community supporters</p>
     <div class="logo-row">
