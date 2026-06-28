@@ -239,10 +239,13 @@ header.scrolled{background:rgba(27,18,51,.92);backdrop-filter:blur(12px);box-sha
 .logos .shead{text-align:center;margin-inline:auto}
 .logo-label{text-align:center;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;color:var(--muted);margin:2.4em 0 1.2em}
 .logo-row{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}
-.logo-tile{background:#fff;border:1px solid var(--line);border-radius:16px;width:170px;height:110px;display:grid;place-items:center;padding:14px;transition:transform .3s,box-shadow .3s}
+.logo-tile{background:#fff;border:1px solid var(--line);border-radius:16px;width:170px;height:110px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:14px;transition:transform .3s,box-shadow .3s}
 .logo-tile:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-.logo-tile img{max-height:100%;max-width:100%;object-fit:contain}
+.logo-tile img{max-height:100%;max-width:100%;object-fit:contain;display:block}
 .cc-tile{width:240px}
+.tier-gold .logo-tile{width:228px;height:138px}
+.tier-silver .logo-tile{width:186px;height:116px}
+.supporters-row .logo-tile{width:150px;height:98px}
 
 /* ===== CONTACT / FORM ===== */
 .contact{background:var(--ink);color:#fff}
@@ -651,22 +654,29 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
 <!-- LOGOS -->
 <section class="logos section-pad">
   <div class="wrap">
-    <div class="shead center reveal"><span class="eyebrow">With gratitude</span><h2>Our past sponsors &amp; supporters</h2><p>With thanks to the partners and performing groups who helped bring our pilot events to life. <em>2026 partners to be confirmed.</em></p></div>
+    <div class="shead center reveal"><span class="eyebrow">With gratitude</span><h2>Our 2026 sponsors</h2><p>With heartfelt thanks to the sponsors making Cambridge India Day 2026 possible.</p></div>
     <p class="logo-label reveal">Organised by</p>
     <div class="logo-row">
       <div class="logo-tile cc-tile reveal"><img src="images/logo-camcareuk.png" alt="CamCare UK — organiser"></div>
     </div>
-    <p class="logo-label reveal">Past sponsors</p>
-    <div class="logo-row">
+    <!-- ===== GOLD SPONSORS — to add one: put the logo in images/, copy a line below, change the file name + alt ===== -->
+    <p class="logo-label reveal">Gold sponsors</p>
+    <div class="logo-row tier-gold">
       <div class="logo-tile reveal"><img src="images/spon-icici.jpg" alt="ICICI Bank"></div>
-      <div class="logo-tile reveal"><img src="images/spon-mina.png" alt="MINA Pan-Asian"></div>
-      <div class="logo-tile reveal"><img src="images/spon-namaste.png" alt="Namaste Village"></div>
       <div class="logo-tile reveal"><img src="images/spon-urbanchai.png" alt="Urban Chai"></div>
+      <div class="logo-tile reveal"><img src="images/spon-mina.png" alt="MINA Pan-Asian"></div>
+    </div>
+    <!-- ===== SILVER SPONSORS — to add one: put the logo in images/, copy a line below, change the file name + alt ===== -->
+    <p class="logo-label reveal">Silver sponsors</p>
+    <div class="logo-row tier-silver">
+      <div class="logo-tile reveal"><img src="images/spon-cb1.png" alt="CB1 Properties"></div>
+      <div class="logo-tile reveal"><img src="images/spon-namaste.png" alt="Namaste Village"></div>
       <div class="logo-tile reveal"><img src="images/spon-tiffintruck.png" alt="The Tiffin Truck"></div>
       <div class="logo-tile reveal"><img src="images/spon-namastecambridge.png" alt="Namaste Cambridge"></div>
     </div>
-    <p class="logo-label reveal">Performing groups &amp; community supporters</p>
-    <div class="logo-row">
+    <!-- ===== SUPPORTING GROUPS — to add one: put the logo in images/, copy a line below, change the file name + alt ===== -->
+    <div class="shead center reveal" style="margin-top:3.4em"><span class="eyebrow">Hand in hand</span><h2>Our supporting groups</h2><p>The performing groups and community organisations bringing the festival to life.</p></div>
+    <div class="logo-row supporters-row">
       <div class="logo-tile reveal"><img src="images/sup-cambourneladies.png" alt="Cambourne Ladies Dance Group"></div>
       <div class="logo-tile reveal"><img src="images/sup-nritham.png" alt="Nritham Dance Academy"></div>
       <div class="logo-tile reveal"><img src="images/sup-natyananda.png" alt="Natyananda School of Dance"></div>
@@ -676,6 +686,9 @@ footer{background:#120c24;color:rgba(255,255,255,.6);padding:48px 0 36px}
       <div class="logo-tile reveal"><img src="images/sup-piyali.png" alt="Piyali's Dance Studio"></div>
       <div class="logo-tile reveal"><img src="images/sup-dhggoonj.png" alt="DHG House of Goonj"></div>
       <div class="logo-tile reveal"><img src="images/sup-swaranritya.png" alt="Swara Nritya"></div>
+      <div class="logo-tile reveal"><img src="images/sup-swaragaranjini.png" alt="SwaRagaRanjini School of Music"></div>
+      <div class="logo-tile reveal"><img src="images/sup-kalaidoscope.png" alt="Kalaidoscope School of Music"></div>
+      <div class="logo-tile reveal"><img src="images/sup-kalashakti.png" alt="Kalashakti by Nandini — Bharatanatyam Dance"></div>
     </div>
   </div>
 </section>
