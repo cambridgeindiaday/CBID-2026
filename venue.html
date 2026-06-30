@@ -41,6 +41,12 @@ header{background:var(--ink);position:sticky;top:0;z-index:50}
 .map-frame{border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);line-height:0}
 .map-frame iframe{width:100%;height:440px;border:0;display:block}
 .dir-btn{text-align:center;margin:1.6em 0 2.4em}
+.sitemap-sec{margin:2.6em 0 .5em}
+.sitemap-sec h2{font-size:clamp(1.4rem,3vw,2rem);color:var(--ink);margin-bottom:.2em}
+.sitemap-sec p{color:var(--muted);margin-bottom:1.1em;max-width:680px}
+.sitemap-link{display:block;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:#fff}
+.sitemap-link img{width:100%;height:auto;display:block}
+.sitemap-link:hover{box-shadow:0 26px 60px -22px rgba(27,18,51,.5)}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:1.2em}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.5em}
 .card .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;margin-bottom:.7em;background:linear-gradient(135deg,var(--saffron),var(--marigold))}
@@ -84,6 +90,12 @@ footer .fl{margin-bottom:.8em;display:flex;gap:1.4rem;justify-content:center;fle
     </div>
     <div class="dir-btn">
       <a href="https://www.google.com/maps/dir/?api=1&destination=Jesus+Green,+Cambridge" target="_blank" rel="noopener" class="btn btn-primary">Get directions in Google Maps</a>
+    </div>
+
+    <div id="sitemap" class="sitemap-sec">
+      <h2>Event site map</h2>
+      <p>The festival layout across Jesus Green — main stage, state pavilions, food bazaar, India bazaar, sponsor stalls, parking and facilities. Tap the map to open it full-size.</p>
+      <a href="images/site-map.png" target="_blank" rel="noopener" class="sitemap-link"><img src="images/site-map.png" alt="Cambridge India Day 2026 event site map of Jesus Green, showing the main stage, state pavilions, food and India bazaars, sponsor stalls, parking and facilities"></a>
     </div>
 
     <div class="grid">
